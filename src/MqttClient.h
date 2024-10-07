@@ -33,7 +33,7 @@
 #define MQTT_NOT_AUTHORIZED                 5
 
 // Make this definition in your application code to use std::functions for onMessage callbacks instead of C-pointers:
-#define MQTT_CLIENT_STD_FUNCTION_CALLBACK
+// #define MQTT_CLIENT_STD_FUNCTION_CALLBACK
 
 #ifdef MQTT_CLIENT_STD_FUNCTION_CALLBACK
 #include <functional>
