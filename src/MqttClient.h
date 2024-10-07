@@ -49,9 +49,9 @@ public:
   typedef std::function<void(MqttClient *client, int messageSize)> MessageCallback;
   void onMessage(MessageCallback callback);
 #else
-  inline void setClient(Client& client) { _client = &client; }
   void onMessage(void(*)(int));
 #endif
+  inline void setClient(Client& client) { _client = &client; }
 
   int parseMessage();
   String messageTopic() const;
