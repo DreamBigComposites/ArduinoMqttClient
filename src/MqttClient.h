@@ -21,7 +21,7 @@
 #define _MQTT_CLIENT_H_
 
 #include <Arduino.h>
-#include <Client.h>
+#include <api/Client.h>
 
 #define MQTT_CONNECTION_REFUSED            -2
 #define MQTT_CONNECTION_TIMEOUT            -1
